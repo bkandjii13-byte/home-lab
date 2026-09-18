@@ -7,16 +7,19 @@ networking, and security fundamentals beyond what I've picked up doing personal
 PC builds and network troubleshooting.
 
 ## Current Setup
-- Host: [fill in your PC specs, e.g. Windows 11, Ryzen 5, 16GB RAM]
+- Host: Windows 11, Intel Core i7-12700F, 16GB RAM
 - Hypervisor: VirtualBox
-- VMs: Ubuntu Server (in progress)
+- VMs: lab-ubuntu-01 (Ubuntu Server 26.04.1 LTS) — running
+
 
 ## Log
 
 ### September 18, 2026
-- Created GitHub repo to document the build
-- Installed VirtualBox on host machine (in progress)
-- Next: create first VM running Ubuntu Server
+- Installed VirtualBox on host machine
+- Created first VM (lab-ubuntu-01) running Ubuntu Server 26.04.1 LTS
+- Completed unattended install, logged in successfully
+- Confirmed VM networking with `ip a` — enp0s3 interface UP, assigned 10.0.2.15/24
+- Next: install pfSense as a second VM to act as a virtual firewall/router
 
 ## Why
 Background in IT support fundamentals (PC builds, Windows troubleshooting, 
